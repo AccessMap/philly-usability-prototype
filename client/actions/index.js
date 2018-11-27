@@ -21,8 +21,8 @@ export const SET_UPHILL_MAX = 'SET_UPHILL_MAX';
 export const SET_UPHILL_MIN = 'SET_UPHILL_MIN';
 export const TOGGLE_UPHILL = 'TOGGLE_UPHILL';
 
-export const RATE_SIDEWALK = 'RATE_SIDEWALK';
-export const UNDO_RATE_SIDEWALK = 'UNDO_RATE_SIDEWALK';
+export const RATE_STREET = 'RATE_STREET';
+export const UNDO_RATE_STREET = 'UNDO_RATE_STREET';
 
 // New action creators
 export const setDownhillMax = incline => ({
@@ -49,13 +49,13 @@ export const toggleUphill = () => ({
   type: TOGGLE_UPHILL,
 });
 
-export const rateSidewalk = (rating, feature) => ({
-  type: RATE_SIDEWALK,
+export const rateStreet = (rating, feature) => ({
+  type: RATE_STREET,
   payload: { rating, feature },
 });
 
-export const undoRateSidewalk = () => ({
-  type: UNDO_RATE_SIDEWALK,
+export const undoRateStreet = () => ({
+  type: UNDO_RATE_STREET,
 });
 
 

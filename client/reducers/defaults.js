@@ -4,9 +4,9 @@ export const defaultBrowser = {
 
 export const defaultInclineRanges = {
   inclineDownhillMax: 150,
-  inclineDownhillMin: 125,
+  inclineDownhillMin: 80,
   inclineUphillMax: 150,
-  inclineUphillMin: 125,
+  inclineUphillMin: 80,
 };
 
 export const defaultLog = [];
@@ -17,7 +17,7 @@ export const defaultMap = {
 };
 
 export const defaultView = {
-  lng: -122.333592,
-  lat: 47.605628,
+  lng: -77.0305,
+  lat: 38.8938,
   zoom: 15,
 };

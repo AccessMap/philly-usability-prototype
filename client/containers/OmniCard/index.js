@@ -82,7 +82,7 @@ const OmniCard = (props) => {
       <React.Fragment>
         <Divider />
         <Toolbar
-          title='Selected Sidewalk'
+          title='Selected Street'
           actions={
             <Button
               icon
@@ -120,21 +120,21 @@ const OmniCard = (props) => {
           <Button
             raised
             style={{ backgroundColor: 'red', color: 'white' }}
-            onClick={() => actions.rateSidewalk('IMPOSSIBLE', selectedFeature)}
+            onClick={() => actions.rateStreet('IMPOSSIBLE', selectedFeature)}
           >
             Impossible
           </Button>
           <Button
             raised
             primary
-            onClick={() => actions.rateSidewalk('DIFFICULT', selectedFeature)}
+            onClick={() => actions.rateStreet('DIFFICULT', selectedFeature)}
           >
             Difficult
           </Button>
           <Button
             raised
             secondary
-            onClick={() => actions.rateSidewalk('NOT DIFFICULT', selectedFeature)}
+            onClick={() => actions.rateStreet('NOT DIFFICULT', selectedFeature)}
           >
             Not difficult
           </Button>
@@ -143,7 +143,7 @@ const OmniCard = (props) => {
         <CardActions>
           <Button
             flat
-            onClick={actions.undoRateSidewalk}
+            onClick={actions.undoRateStreet}
             style={{ color: 'red' }}
           >
             Undo

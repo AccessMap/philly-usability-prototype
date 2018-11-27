@@ -7,13 +7,13 @@ import ReactMapboxGl from 'react-mapbox-gl';
 
 import * as AppActions from 'actions';
 
-import SidewalkSource from './source-sidewalks';
+import StreetSource from './source-streets';
 
-import Sidewalks from './layers-sidewalks';
+import Streets from './layers-streets';
 
 
 const CLICKABLE_LAYERS = [
-  'sidewalk-click',
+  'street-click',
 ];
 
 const Map = ReactMapboxGl({
@@ -75,12 +75,12 @@ class AccessMap extends Component {
         pitch={[0]}
         maxBounds={[
           [
-            -122.71446096536938,
-            47.40689742599213,
+            -77.1850,
+            38.7841,
           ],
           [
-            -121.9073424946721,
-            47.8092130645955,
+            -76.9011,
+            38.9987,
           ],
         ]}
         /* eslint-disable react/style-prop-object */
@@ -119,9 +119,9 @@ class AccessMap extends Component {
         {...props}
       >
 
-        <SidewalkSource />
+        <StreetSource />
 
-        <Sidewalks />
+        <Streets />
       </Map>
     );
   }
